@@ -5,7 +5,7 @@ import LanguageOutlinedIcon from '@mui/icons-material/LanguageOutlined';
 export default function Nav() {
 
   return (
-    <div className='flex items-center justify-around mt-2'>
+    <div className='flex items-center justify-around mt-2 h-20 shadow-xl'>
         <img src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg" 
         alt="Udemy logo" 
         className='object-contain w-20 h-9 cursor-pointer ml-5'
