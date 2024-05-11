@@ -1,0 +1,162 @@
+
+section {
+    width: 80vw;
+    height:70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5rem 30rem;
+    margin-left: 9rem;
+}
+
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background: white;
+    color: black;
+    font-family: Helvetica;
+    text-align: center;
+    margin: 0;
+    white-space: nowrap;
+}
+
+
+/* Additional Code */
+
+.container {
+    display: flex;
+}
+
+.header {
+    text-align: left;
+    margin-left: 9rem;
+    margin-top:30px;
+    font-size:40px;
+    font-weight:700;
+}
+
+.course-count {
+
+    margin-top: 1rem;
+    margin-bottom: 0;
+    text-align: left;
+    margin-left: 9rem;
+    font-weight:700;
+}
+
+.shopping {
+    padding: 10px;
+    text-align: center;
+    background-color: #8710D8;
+    color: white;
+    white-space: nowrap;
+
+}
+
+
+@media (max-width: 1020px) {
+
+    /* Styles for screens with a maximum width of 768px */
+    section {
+        width: 450px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: 1px solid black;
+        padding: 1rem 10rem;
+        margin-left: 4rem;
+    }
+}
+
+@media (max-width: 1370px) {
+
+    /* Styles for screens with a maximum width of 768px */
+    section {
+        width: 550px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: 1px solid black;
+        padding: 10rem 22rem;
+        margin-left: 6rem;
+    }
+}
+
+@media (max-width: 990px) {
+
+    /* Styles for screens with a maximum width of 768px */
+    section {
+        width: 420px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: 1px solid black;
+        padding: 6rem 15rem;
+        margin-left: 3rem;
+    }
+}
+
+@media (max-width: 670px) {
+
+    /* Styles for screens with a maximum width of 768px */
+    section {
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: 1px solid black;
+        padding: 1.5rem 7rem;
+        margin-left: 3rem;
+    }
+
+    .header {
+        text-align: left;
+        margin-left: 2rem;
+    }
+
+    .course-count {
+
+
+        text-align: left;
+        margin-left: 3rem;
+        font-size: 1rem;
+    }
+
+    .shopping {
+        padding: 4px;
+        text-align: center;
+        background-color: rgb(51, 154, 240);
+        color: white;
+
+
+    }
+
+    .shopping:hover {
+        color: white;
+        background-color: rgb(32, 110, 174);
+        margin: 2rem;
+
+    }
+
+    section p {
+        font-size: 8px;
+    }
+
+    section img {
+
+        width: 50px;
+
+    }
+}

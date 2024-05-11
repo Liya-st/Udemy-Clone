@@ -8,7 +8,7 @@ export default function SignUp() {
 
   return (
     <>
-      <Nav />
+      
       <div className='flex flex-col gap-4 justify-center items-center m-auto h-screen'>
         <p className='font-sans font-bold'>Sign up and start learning</p>
         <TextField
