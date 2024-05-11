@@ -17,6 +17,7 @@ function Cart() {
                     <section style={{ border: '1px solid #D3D3D3' }} >
                         <img src={Image} className='h-[200px] pb-[20px]' alt="Search" />
                         <p>Your cart is empty. Keep shopping to find a course!</p>
+                        <br/>
                         <a href='' className='shopping'>Keep shopping</a>
                     </section>
                 </div>
