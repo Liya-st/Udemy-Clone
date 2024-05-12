@@ -1,15 +1,25 @@
-/* styles.css */
-/* Customizing the navigation buttons */
 .slick-prev:before,
 .slick-next:before {
-    color: black;
+    color: rgb(119, 111, 111);
+    font-size: 45px;
+    z-index: 1;
+}
+.slick-prev
+{
+    margin-left: 40px;
+}
+.slick-next {
+    margin-right: 80px;
 }
 
-.slick-prev,
-.slick-next {
-    color:black;
-    border-radius: 50%;
-    height: 30px;
-    width: 20px;
-  
+.slick-next,.slick-prev {
+    color: rgb(119, 111, 111);
+        border-radius: 50%;
+   
+    z-index: 1;
+}
+
+.slick-slider {
+    z-index: 0;
+    
 }

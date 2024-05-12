@@ -40,14 +40,14 @@ export const Scrollhome = () => {
   ]
   return (
     <div className='w-[70wv] h-[60vh] bg-white mt-0  '>
-      <div className='mt-0 h-full pl-[40px] pr-[40px]'>
+      <div className='mt-0 h-full pl-[50px] pr-[60px]'>
         <Slider {...Settings}>
           {Data.map((d, index) => (
             <div key={index} className='w-[100%] relative'>
               <img className='h-full w-full ' src={d.img} />
               <div className="text-box " style={{
                 position: 'absolute', top: '50%', left: '15%', transform: 'translate(-50%, -50%)',
-                textAlign: 'center', width: '350px', height: '150px', backgroundColor: 'white', textOverflow: 'inherit'
+                textAlign: 'center', width: '350px', height: '150px', backgroundColor: 'white', textOverflow: 'inherit', textWrap: 'wrap', padding: '15px', margin: '10px', marginLeft: '50px'
               }}>
                 <h2 className='text-black  font-bold  font-weight-800 text-xl'>{d.header}</h2>
                 <p>{d.par}</p>
