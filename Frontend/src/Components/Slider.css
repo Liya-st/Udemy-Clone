@@ -1,0 +1,15 @@
+/* styles.css */
+/* Customizing the navigation buttons */
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+
+.slick-prev,
+.slick-next {
+    color:black;
+    border-radius: 50%;
+    height: 30px;
+    width: 20px;
+  
+}
