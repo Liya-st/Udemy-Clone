@@ -1,11 +1,10 @@
 import React from 'react'
-import Nav from '../Components/Nav'
 import { TextField } from '@mui/material'
 
 export default function Login() {
   return (
     <div>
-      <Nav />
+      
       <div className='flex flex-col gap-3 justify-center items-center m-auto h-screen'>
         <p className='font-sans font-bold mr-36'>Log into your Udemy account</p>
        <div className='w-[384px] border border-black h-10 p-5 flex items-center font-bold font-sans'>
