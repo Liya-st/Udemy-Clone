@@ -6,6 +6,7 @@ import Nav from './Components/Nav'
 import '@mantine/core/styles.css';
 import { Routes,Route } from "react-router-dom";
 import Cart from "./Components/Cart";
+import { Courses } from "./Pages/Instructor/Courses.jsx";
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
        <Route path="/Components/Cart" element={<Cart />} />
        <Route path="/Pages/Signup" element={<SignUp />} />
       <Route path="/Pages/Login" element={<Login />} />
+      <Route path="Pages/Instructor/Courses" element={<Courses />} />
     </Routes>
     <Footer/>
     </>
