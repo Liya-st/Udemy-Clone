@@ -17,6 +17,9 @@ export default function Nav() {
    const handleSignup = () => {
     navigate('/Pages/Signup');
   };
+  const handleCourse  =() =>{
+    navigate('/Pages/Instructor/Courses')
+  }
   const handleHome = () => {
     navigate('/');
   };
@@ -71,7 +74,7 @@ export default function Nav() {
               onMouseEnter={handleTeaching}
               onMouseLeave={handleTeaching}
                onClick={handleCourse}
-            >
+
               Teach on Udemy
             </p>
             <p className='font-sans text-base text-[#2D2F31] hover:text-[#A435F0]'>My Learning</p>
@@ -82,17 +85,17 @@ export default function Nav() {
             <p className='text-[#2D2F31] font-size-[16px] pb-2 font-bold  break-words'>
               Turn what you know into an opportunity and reach millions around the world.
             </p>
-            <button className='bg-[#2D2F31] text-white font-bold py-2 px-4 rounded'>
+            <button className='bg-[#2D2F31] text-white font-bold py-2 px-4 rounded'onClick={handleCourse}>
               Learn More
             </button>
           </div>
         )}
         {showBusiness && (
           <div className='absolute top-[58px] left-1100 bg-white w-[200px] h-[200px] p-4  break-words  shadow-lg'>
-            <p className='text-[#2D2F31] font-size-[16px] pb-2 font-bold'>
+            <p className='text-[#2D2F31] font-size-[16px] pb-2 font-bold' >
               Get your team access to over 25,000 top Udemy courses, anytime, anywhere.
             </p>
-            <button className='bg-[#2D2F31] text-white font-bold py-2 px-4 rounded'>
+            <button className='bg-[#2D2F31] text-white font-bold py-2 px-4 rounded' >
               Try Udemy Business
             </button>
           </div>
