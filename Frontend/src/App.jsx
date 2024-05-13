@@ -9,11 +9,12 @@ import Cart from "./Components/Cart";
 import { Courses } from "./Pages/Instructor/Courses.jsx";
 
 function App() {
-
+  const isNavbarVisible = ['/Cart', '/Login', '/SignUp','/'];
   return (
     <>
-    <Nav />
+    {isNavbarVisible.includes(window.location.pathname) && <Nav />}
     <Routes>
+
        <Route path="/" element={<Home />} />
        <Route path="/Components/Cart" element={<Cart />} />
        <Route path="/Pages/Signup" element={<SignUp />} />

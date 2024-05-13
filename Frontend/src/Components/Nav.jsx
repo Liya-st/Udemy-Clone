@@ -29,9 +29,9 @@ export default function Nav() {
     setShowTeaching(!showTeaching);
     setShowBusiness(false);
   };
-  const handleTeaching2 = () => {
-    navigate('/Pages/Instructor/Courses');
-  };
+  const handleCourse  =() =>{
+    navigate('/Pages/Instructor/Courses')
+  }
   const handleBusiness= () => {
     setShowBusiness(!showBusiness);
     setShowTeaching(false);
@@ -70,7 +70,7 @@ export default function Nav() {
               className='font-sans text-base text-[#2D2F31] hover:text-[#A435F0]'
               onMouseEnter={handleTeaching}
               onMouseLeave={handleTeaching}
-              onClick={handleTeaching2}
+               onClick={handleCourse}
             >
               Teach on Udemy
             </p>
