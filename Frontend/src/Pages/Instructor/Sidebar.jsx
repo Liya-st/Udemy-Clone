@@ -21,7 +21,7 @@ const containerVariants = {
     width: "5rem",
     transition: {
       type: "spring",
-      damping: 15,
+      damping: 20,
       duration: 0.5,
     },
  },
@@ -88,7 +88,7 @@ function NavBar() {
             />
           </svg>
         </button> */}
-        <div className="space-y-3" onMouseEnter={handleOpenClose}>
+        <div className="space-y-2" onMouseEnter= {handleOpenClose}>
           {isOpen ? (
             <div className="flex flex-col gap-4">
               <Link to="/Course">
