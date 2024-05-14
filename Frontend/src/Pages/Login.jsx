@@ -2,6 +2,7 @@ import React from 'react'
 import { TextField } from '@mui/material'
 import SignUp from './SignUp';
 import { useNavigate } from 'react-router-dom';
+import { useState } from 'react';
 
 export default function Login() {
 
@@ -10,6 +11,23 @@ export default function Login() {
   const handleSignup = ()=>{
           navigate('/Pages/SignUp')
   }
+
+  const [email, setEmail] = useState('');
+  const [error, setError] = useState('');
+
+  const handleEmailChange = (e) => {
+    const value = e.target.value;
+    setEmail(value);
+
+    // Perform validation
+    const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
+    if (!emailRegex.test(value)) {
+      setError('Please enter a valid email address');
+    } else {
+      setError('');
+    }
+  };
+
   return (
     <div>
       
@@ -31,8 +49,13 @@ export default function Login() {
 
         <TextField
           id="outlined-basic"
+          type='email'
           label="Email"
+          value={email}
           variant="outlined"
+          onChange={handleEmailChange}
+          error={Boolean(error)}
+          helperText={error}
           style={{ width: '384px' }}
           sx={{
             "& .MuiOutlinedInput-root": {
@@ -47,11 +70,14 @@ export default function Login() {
               fontWeight: "bold",
             },
           }}
+          
+  
         />
 
         <TextField
           id="outlined-basic"
           label="Password"
+          type='password'
           variant="outlined"
           style={{ width: '384px' }}
           sx={{
