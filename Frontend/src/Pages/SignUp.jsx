@@ -2,9 +2,15 @@ import React, { useState } from 'react'
 import Nav from '../Components/Nav'
 import { TextField } from '@mui/material'
 import PasswordStrengthBar from 'react-password-strength-bar';
+import { useNavigate } from 'react-router-dom';
 
 export default function SignUp() {
   const [password, setPassword] = useState();
+  const navigate=useNavigate();
+  const handleLogin = ()=>{
+
+    navigate('/Pages/Login');
+  }
 
   return (
     <>
@@ -97,7 +103,7 @@ export default function SignUp() {
         </button>
         <p className=' font-sans text-xs'>By signing up, you agree to our Terms of Use and Privacy Policy.</p>
         <hr />
-        <p>Already have an account? <span className='text-p text-purple-900 font-bold font-sans underline'>Login</span></p>
+        <p>Already have an account? <span className='text-p text-purple-900 font-bold font-sans underline' onClick={handleLogin}><button>Login</button></span></p>
       </div>
     </>
   )

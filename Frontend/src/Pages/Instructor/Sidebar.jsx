@@ -156,6 +156,7 @@ function NavBar() {
             </div>
           )}
         </div>
+        </div>
       </motion.div>
     </motion.nav>
  );

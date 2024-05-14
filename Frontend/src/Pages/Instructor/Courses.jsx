@@ -23,6 +23,7 @@ export const Courses = () => {
                 <div className='bg-purple-600 ml-[43rem] w-[8rem] h-[2.5rem] text-white'>
                 New course
                 </div>
+                </div>
                 
             </div>
 
@@ -82,6 +83,7 @@ export const Courses = () => {
 
         </div>
     </div>
+     
     </>
   )
 }

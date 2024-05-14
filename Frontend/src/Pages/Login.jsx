@@ -1,7 +1,15 @@
 import React from 'react'
 import { TextField } from '@mui/material'
+import SignUp from './SignUp';
+import { useNavigate } from 'react-router-dom';
 
 export default function Login() {
+
+  const navigate= useNavigate();
+  
+  const handleSignup = ()=>{
+          navigate('/Pages/SignUp')
+  }
   return (
     <div>
       
@@ -67,11 +75,11 @@ export default function Login() {
     
 
         <button className='bg bg-purple-600 w-[384px] h-12 font-sans font-bold text-white'>
-          Sign up
+          Login
         </button>
         <span className='text-p text-purple-900 font-bold font-sans underline'> Or Forgot Password</span>
         <hr />
-        <p>Don't have an account? <span className='text-p text-purple-900 font-bold font-sans underline'>Sign up</span></p>
+        <p>Don't have an account? <span className='text-p text-purple-900 font-bold font-sans underline' onClick={handleSignup}><button>Sign up</button></span></p>
         <span className='text-p text-purple-900 font-bold font-sans underline'> Log in with your organization</span>
 
       </div>
