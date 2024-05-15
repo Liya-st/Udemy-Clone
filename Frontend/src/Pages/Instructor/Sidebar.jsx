@@ -95,19 +95,19 @@ function NavBar() {
             <div className="flex flex-col gap-4">
               <Link to="/Course">
                
-               <h1 className="hover:bg-gray-600  text-xl p-2 rounded-lg w-[12rem] font-bold"><OndemandVideoIcon/>Course</h1>
+               <h1 className="hover:bg-gray-600  text-xl p-2 rounded-lg w-[12rem] font-bold"><OndemandVideoIcon/>    Course</h1>
               </Link>
-              <Link to="/Communication"> 
-                <h1 className="hover:bg-gray-600  text-xl p-2 rounded-lg w-[12rem] font-bold"> <LeaderboardIcon/>    Communication</h1>
+              <Link to="/Pages/Instructor/Communication"> 
+                <h1 className="hover:bg-gray-600  text-xl p-2 rounded-lg w-[12rem] font-bold"><ChatIcon/>          Communication</h1>
               </Link>
               <Link to="/Performance"> 
-                <h1 className="hover:bg-gray-600  text-xl p-2 rounded-lg w-[12rem] font-bold"> <LeaderboardIcon/>  Performance</h1>
+                <h1 className="hover:bg-gray-600  text-xl p-2 rounded-lg w-[12rem] font-bold"><LeaderboardIcon/>   Performance</h1>
               </Link>
               <Link to="/Tools">
-                <h1 className="hover:bg-gray-600  text-xl p-2 rounded-lg w-[12rem] font-bold"> <BuildIcon/> Tools</h1>
+                <h1 className="hover:bg-gray-600  text-xl p-2 rounded-lg w-[12rem] font-bold"><BuildIcon/>    Tools</h1>
               </Link>
               <Link to="/Resource">
-                <h1 className=" hover:bg-gray-600 text-xl p-2 rounded-lg w-[12rem] font-bold"><HelpOutlineIcon/>Resource</h1>
+                <h1 className=" hover:bg-gray-600 text-xl p-2 rounded-lg w-[12rem] font-bold"><HelpOutlineIcon/>     Resource</h1>
               </Link>
             </div>
 

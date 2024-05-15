@@ -7,6 +7,10 @@ import '@mantine/core/styles.css';
 import { Routes,Route } from "react-router-dom";
 import Cart from "./Components/Cart";
 import { Courses } from "./Pages/Instructor/Courses.jsx";
+import { Course1 } from "./Pages/Instructor/Create/Course1.jsx";
+import { Course2 } from "./Pages/Instructor/Create/Course2.jsx";
+import { Course3 } from "./Pages/Instructor/Create/Course3.jsx";
+
 
 function App() {
   const isNavbarVisible = ['/Cart', '/Login', '/SignUp','/'];
@@ -27,6 +31,9 @@ function App() {
        <Route path="/Components/Cart" element={<Cart />} />
        <Route path="/Pages/Signup" element={<SignUp />} />
       <Route path="/Pages/Login" element={<Login />} />
+      <Route path ="/Pages/Instructor/Courses/Create/Course1" element={<Course1/>}/> 
+      <Route path ="/Pages/Instructor/Courses/Create/Course2" element={<Course2/>}/> 
+      <Route path ="/Pages/Instructor/Courses/Create/Course3" element={<Course3/>}/>
       
     </Routes>
     <Footer/>
