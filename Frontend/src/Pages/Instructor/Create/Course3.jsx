@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Select, TextInput } from '@mantine/core';
+import { Select} from '@mantine/core';
 
 
 export function ContainedInputs() {
