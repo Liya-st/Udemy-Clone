@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import SearchIcon from '@mui/icons-material/Search';
 import { useNavigate } from 'react-router-dom';
-import { NavLink } from '@mantine/core';
-import { Dropdown } from './Dropdown';
+import { NavLink, HoverCard } from '@mantine/core';
+import { Dropdowns } from './Dropdown';
 import list from '../list.json';
 
 export default function Nav() {
@@ -48,7 +48,7 @@ export default function Nav() {
           onClick={handleHome}
         />
 
-        <Dropdown />
+        <Dropdowns />
 
         <div className='relative flex items-center'>
           <input
@@ -60,14 +60,32 @@ export default function Nav() {
         </div>
         <button className='relative'>
           <div className='flex gap-5'>
-            <p
+           
+            <Group justify='center'>
+            <HoverCard width={280} shadow="md">
+        <HoverCard.Target>
+        <p
               className='font-sans text-base text-[#2D2F31] hover:text-[#A435F0]'
               onMouseEnter={handleTeaching}
               onMouseLeave={handleTeaching}
             >
               Udemy Business
             </p>
-            <p
+        </HoverCard.Target>
+        <HoverCard.Dropdown>
+            <p className='text-[#2D2F31] font-size-[12px] pb-2 font-bold  break-words w-10'>
+            Get your team access to over<br/>25,000 top Udemy courses, <br/>anytime, anywhere.
+            </p>
+            <button className='bg-[#2D2F31] text-white font-bold py-2 px-4 rounded' >
+              Try Udemy Business
+            </button>
+        </HoverCard.Dropdown>
+      </HoverCard>
+      </Group>
+            <Group justify='center'>
+            <HoverCard width={280} shadow="md">
+        <HoverCard.Target>
+        <p
               className='font-sans text-base text-[#2D2F31] hover:text-[#A435F0]'
               onMouseEnter={handleTeaching}
               onMouseLeave={handleTeaching}
@@ -75,29 +93,22 @@ export default function Nav() {
             >
               Teach on Udemy
             </p>
-            <p className='font-sans text-base text-[#2D2F31] hover:text-[#A435F0]'>My Learning</p>
-          </div>
-        </button>
-        {showTeaching && (
-          <div className='absolute top-[58px] left-1100 bg-white w-[200px] h-[200px] p-4  shadow-lg'>
-            <p className='text-[#2D2F31] font-size-[16px] pb-2 font-bold  break-words'>
-              Turn what you know into an opportunity and reach millions around the world.
+        </HoverCard.Target>
+        <HoverCard.Dropdown>
+            <p className='text-[#2D2F31] font-size-[12px] pb-2 font-bold  break-words w-10'>
+                Turn what you know into an <br/> opportunity and reach millions <br/>around the world.
+
             </p>
             <button className='bg-[#2D2F31] text-white font-bold py-2 px-4 rounded'onClick={handleCourse}>
               Learn More
             </button>
+        </HoverCard.Dropdown>
+      </HoverCard>
+      </Group>
+            <p className='font-sans text-base text-[#2D2F31] hover:text-[#A435F0]'>My Learning</p>
           </div>
-        )}
-        {showBusiness && (
-          <div className='absolute top-[58px] left-1100 bg-white w-[200px] h-[200px] p-4  break-words  shadow-lg'>
-            <p className='text-[#2D2F31] font-size-[16px] pb-2 font-bold' >
-              Get your team access to over 25,000 top Udemy courses, anytime, anywhere.
-            </p>
-            <button className='bg-[#2D2F31] text-white font-bold py-2 px-4 rounded' >
-              Try Udemy Business
-            </button>
-          </div>
-        )}
+        </button>
+     
 
         <ShoppingCartOutlinedIcon
           className='hover:text-[#5624d0] hover:cursor-pointer'

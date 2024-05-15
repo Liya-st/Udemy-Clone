@@ -12,6 +12,8 @@ import { Course2 } from "./Pages/Instructor/Create/Course2.jsx";
 import { Course3 } from "./Pages/Instructor/Create/Course3.jsx";
 import { AuthProvider } from "./contexts/AuthContext.jsx";
 
+import { Course4 } from "./Pages/Instructor/Create/course4.jsx";
+
 
 function App() {
   const isNavbarVisible = ['/Cart', '/Login', '/SignUp','/'];
@@ -36,6 +38,7 @@ function App() {
       <Route path ="/Pages/Instructor/Courses/Create/Course1" element={<Course1/>}/> 
       <Route path ="/Pages/Instructor/Courses/Create/Course2" element={<Course2/>}/> 
       <Route path ="/Pages/Instructor/Courses/Create/Course3" element={<Course3/>}/>
+      <Route path ="/Pages/Instructor/Courses/Create/Course4" element={<Course4/>}/>
       
     </Routes>
     <Footer/>

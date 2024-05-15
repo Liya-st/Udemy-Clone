@@ -22,7 +22,6 @@ const containerVariants = {
     transition: {
       type: "spring",
       damping: 15,
-      damping: 20,
       duration: 0.5,
     },
  },
