@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import SearchIcon from '@mui/icons-material/Search';
 import { useNavigate } from 'react-router-dom';
-import { NavLink, HoverCard } from '@mantine/core';
+import { NavLink, HoverCard, Group } from '@mantine/core';
 import { Dropdowns } from './Dropdown';
 import list from '../list.json';
 
