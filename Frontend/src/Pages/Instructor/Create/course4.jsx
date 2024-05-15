@@ -59,7 +59,7 @@ export const Course4 = () => {
                 Previous
             </button></Link>
         
-        <Link to='/Pages/Instructor/Courses/Create/Course4'><button
+        <Link to='/Pages/Instructor/Courses/Create/Upload'><button
             className= 'mt-5 ml-4 bg-gray-400 hover:bg-gray-700 text-white font-bold py-2 w-40 px-4  '>
             Create Course 
         </button>
