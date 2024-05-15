@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import SearchIcon from '@mui/icons-material/Search';
 import { useNavigate } from 'react-router-dom';
-import { NavLink, HoverCard, Text, Group } from '@mantine/core';
-import { Dropdown } from './Dropdown';
+import { NavLink, HoverCard } from '@mantine/core';
+import { Dropdowns } from './Dropdown';
 import list from '../list.json';
 
 export default function Nav() {
@@ -48,7 +48,7 @@ export default function Nav() {
           onClick={handleHome}
         />
 
-        <Dropdown />
+        <Dropdowns />
 
         <div className='relative flex items-center'>
           <input

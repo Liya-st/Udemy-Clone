@@ -26,11 +26,13 @@ export const Courses = () => {
 
                 <div className='border ml-[1rem] border-gray-300 w-20 h-10 font-bold'>Newest</div>
 
-                <Link to = "Create/Course1 "><div className='bg-purple-600 hover:bg-purple-800 ml-[43rem] w-[8rem] h-[2.5rem] text-white'>
+                <Link to = "Create/Course1 ">
+                    <div className='bg-purple-600 hover:bg-purple-800 ml-[43rem] w-[8rem] h-[2.5rem] text-white'>
                 New course
                 </div>
+                </Link>
                 </div>
-                </div> </Link>
+                </div> 
                 
             </div>
 
