@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import Sidebar from './Sidebar'
 import SearchIcon from '@mui/icons-material/Search';
 import OndemandVideoIcon from '@mui/icons-material/OndemandVideo';
@@ -21,9 +22,9 @@ export const Courses = () => {
 
                 <div className='border ml-[1rem] border-gray-300 w-20 h-10 font-bold'>Newest</div>
 
-                <div className='bg-purple-600 ml-[43rem] w-[8rem] h-[2.5rem] text-white'>
+                <Link to = "Create/Course1 "><div className='bg-purple-600 hover:bg-purple-800 ml-[43rem] w-[8rem] h-[2.5rem] text-white'>
                 New course
-                </div>
+                </div> </Link>
                 
             </div>
 
@@ -35,7 +36,7 @@ export const Courses = () => {
                     <p className='text-xl text-gray-700 p-[1rem] flex '>Create an Engaging Course</p>
                     <p className='p-[1rem] whitespace-normal w-[30rem] ' >Whether you've been teaching for years or are teaching for the first time, you can make an engaging course. We've compiled resources and best practices to help you get to the next level, no matter where you're starting.</p>
                     
-                    <a className=" p-[1rem] flex justify-startmt-[1rem] underline text-purple-800 hover:text-purple-950 "href="">Get started</a>
+                   <Link to= "Instructor/Resource"><a className=" p-[1rem] flex justify-startmt-[1rem] underline text-purple-800 hover:text-purple-950 ">Get started</a></Link> 
 
                 </div>
             </div>
