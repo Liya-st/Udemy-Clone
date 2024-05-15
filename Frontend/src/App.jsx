@@ -1,6 +1,7 @@
 import Footer from "./Components/Footer";
 import Login from "./Pages/Login"
 import SignUp from "./Pages/SignUp"
+import Home from "./Pages/Home"
 import Nav from './Components/Nav'
 import '@mantine/core/styles.css';
 import { Routes,Route } from "react-router-dom";
@@ -18,6 +19,14 @@ function App() {
     <>
     {isNavbarVisible.includes(window.location.pathname) && <Nav />}
     <Routes>
+
+
+       <Route path="/" element={<Home />} />
+       <Route path="/Components/Cart" element={<Cart />} />
+       <Route path="/Pages/Signup" element={<SignUp />} />
+      <Route path="/Pages/Login" element={<Login />} />
+      <Route path="Pages/Instructor/Courses" element={<Courses />} />
+
        <Route path="Pages/Instructor/Courses" element={<Courses />} />
        <Route path="/Components/Cart" element={<Cart />} />
        <Route path="/Pages/Signup" element={<SignUp />} />
