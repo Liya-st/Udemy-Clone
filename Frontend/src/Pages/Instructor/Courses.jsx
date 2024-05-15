@@ -17,6 +17,10 @@ export const Courses = () => {
             <h1 className='text-3xl flex justify-start font-bold pb-[1.5rem] text-gray-700 '>Courses</h1>
 
             <div className='flex gap-[3rem]'>
+                <div ><input type =" text"className='border border-2 border-gray-700 w-64 h-10' placeholder='  Search Your Courses'/> <SearchIcon sx={{ fontSize: 40}}/>
+                </div>
+
+                <div className='border ml-[1rem] border-gray-700 w-20 h-10 font-bold'>Newest</div>
                 <div ><input type =" text"className='border border-2 border-gray-200 w-64 h-10' placeholder='  Search Your Courses'/> <SearchIcon sx={{ fontSize: 40}}/>
                 </div>
 
@@ -24,12 +28,16 @@ export const Courses = () => {
 
                 <Link to = "Create/Course1 "><div className='bg-purple-600 hover:bg-purple-800 ml-[43rem] w-[8rem] h-[2.5rem] text-white'>
                 New course
+                </div>
+                </div>
                 </div> </Link>
                 
             </div>
 
             <p className=' p-[4rem]  text-grey-700 '>Based on your experience, we think these resources will be helpful.</p>
 
+            <div className='border flex gap-[10rem] shadow-lg border-gray-800 w-80% h-80%'>
+            <div className='border flex gap-[10rem] shadow-lg border-gray-200 w-80% h-80%'>
             <div className='border flex gap-[10rem] shadow-lg border-gray-300 w-80% h-80%'>
                 <img className = "  pl-[10rem] w-50  h-40" src='https://s.udemycdn.com/instructor/dashboard/engaging-course-2x.jpg'/>
                 <div className=''>
@@ -76,6 +84,8 @@ export const Courses = () => {
                 </div>
             </div>
 
+
+            <p className=' mt-[2rem] '>Have questions? Here are our most popular instructor resources.</p>
             <p className=' mt-[5rem] '>Have questions? Here are our most popular instructor resources.</p>
             <div className='flex gap-[2rem] pt-[5rem] m-[1rem]'>
                 <div>
@@ -109,6 +119,7 @@ export const Courses = () => {
 
         </div>
     </div>
+     
     </>
   )
 }

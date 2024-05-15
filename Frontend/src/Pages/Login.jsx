@@ -1,7 +1,33 @@
 import React from 'react'
 import { TextField } from '@mui/material'
+import SignUp from './SignUp';
+import { useNavigate } from 'react-router-dom';
+import { useState } from 'react';
 
 export default function Login() {
+
+  const navigate= useNavigate();
+  
+  const handleSignup = ()=>{
+          navigate('/Pages/SignUp')
+  }
+
+  const [email, setEmail] = useState('');
+  const [error, setError] = useState('');
+
+  const handleEmailChange = (e) => {
+    const value = e.target.value;
+    setEmail(value);
+
+    // Perform validation
+    const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
+    if (!emailRegex.test(value)) {
+      setError('Please enter a valid email address');
+    } else {
+      setError('');
+    }
+  };
+
   return (
     <div>
       
@@ -23,8 +49,13 @@ export default function Login() {
 
         <TextField
           id="outlined-basic"
+          type='email'
           label="Email"
+          value={email}
           variant="outlined"
+          onChange={handleEmailChange}
+          error={Boolean(error)}
+          helperText={error}
           style={{ width: '384px' }}
           sx={{
             "& .MuiOutlinedInput-root": {
@@ -39,11 +70,14 @@ export default function Login() {
               fontWeight: "bold",
             },
           }}
+          
+  
         />
 
         <TextField
           id="outlined-basic"
           label="Password"
+          type='password'
           variant="outlined"
           style={{ width: '384px' }}
           sx={{
@@ -67,11 +101,11 @@ export default function Login() {
     
 
         <button className='bg bg-purple-600 w-[384px] h-12 font-sans font-bold text-white'>
-          Sign up
+          Login
         </button>
         <span className='text-p text-purple-900 font-bold font-sans underline'> Or Forgot Password</span>
         <hr />
-        <p>Don't have an account? <span className='text-p text-purple-900 font-bold font-sans underline'>Sign up</span></p>
+        <p>Don't have an account? <span className='text-p text-purple-900 font-bold font-sans underline' onClick={handleSignup}><button>Sign up</button></span></p>
         <span className='text-p text-purple-900 font-bold font-sans underline'> Log in with your organization</span>
 
       </div>
