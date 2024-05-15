@@ -41,7 +41,7 @@ export const Course3 = () => {
       <ContainedInputs/>
 
       <div className='border border-double mt-20 flex justify-between'>
-      <Link to='/Pages/Instructor/Courses/Create/Course3'><button className= 'mt-5 ml-4 bg-gray-400 hover:bg-gray-700 text-white font-bold py-2 p w-40 '>
+      <Link to='/Pages/Instructor/Courses/Create/Course2'><button className= 'mt-5 ml-4 bg-gray-400 hover:bg-gray-700 text-white font-bold py-2 p w-40 '>
             Previous
         </button></Link>
     

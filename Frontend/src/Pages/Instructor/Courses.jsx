@@ -84,10 +84,5 @@ export const Courses = () => {
         </div>
       </div>
     </>
-<<<<<<< Updated upstream
-  )
-}
-=======
   );
 };
->>>>>>> Stashed changes
