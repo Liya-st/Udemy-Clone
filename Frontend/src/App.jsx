@@ -10,6 +10,8 @@ import { Courses } from "./Pages/Instructor/Courses.jsx";
 import { Course1 } from "./Pages/Instructor/Create/Course1.jsx";
 import { Course2 } from "./Pages/Instructor/Create/Course2.jsx";
 import { Course3 } from "./Pages/Instructor/Create/Course3.jsx";
+import { AuthProvider } from "./contexts/AuthContext.jsx";
+
 import { Course4 } from "./Pages/Instructor/Create/course4.jsx";
 
 
@@ -18,6 +20,7 @@ function App() {
 
   return (
     <>
+        <AuthProvider>
     {isNavbarVisible.includes(window.location.pathname) && <Nav />}
     <Routes>
 
@@ -39,6 +42,7 @@ function App() {
       
     </Routes>
     <Footer/>
+    </AuthProvider>
     </>
   )
 }
