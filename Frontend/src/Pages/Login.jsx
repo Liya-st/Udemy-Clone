@@ -3,6 +3,8 @@ import { TextField } from '@mui/material'
 import SignUp from './SignUp';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
+import { UserAuth } from "../contexts/AuthContext";
+
 
 export default function Login() {
 
@@ -14,6 +16,9 @@ export default function Login() {
 
   const [email, setEmail] = useState('');
   const [error, setError] = useState('');
+  const { user, logIn } = UserAuth();
+  const [password, setPassword] = useState('') 
+  const [isLoading, setIsLoading] = useState(false); // Loading state
 
   const handleEmailChange = (e) => {
     const value = e.target.value;
@@ -27,6 +32,24 @@ export default function Login() {
       setError('');
     }
   };
+
+    const handleSubmit = async (e) => {
+       e.preventDefault();
+  setError('');
+  setIsLoading(true); // Set loading state to true
+
+  try {
+    await logIn(email, password);
+    setIsLoading(false); // Reset loading state
+    alert('Successfully logged in'); // Display success alert
+     navigate('/');
+  } catch (error) {
+    console.log(error);
+    setError(error.message);
+    setIsLoading(false); // Reset loading state
+  }
+  };
+
 
   return (
     <div>
@@ -100,7 +123,7 @@ export default function Login() {
         
     
 
-        <button className='bg bg-purple-600 w-[384px] h-12 font-sans font-bold text-white'>
+        <button className='bg bg-purple-600 w-[384px] h-12 font-sans font-bold text-white' onClick={handleSubmit}>
           Login
         </button>
         <span className='text-p text-purple-900 font-bold font-sans underline'> Or Forgot Password</span>
