@@ -8,6 +8,8 @@ import Intended from './CourseSection.jsx/Intended';
 import Curriculum from './CourseSection.jsx/Curriculum';
 import Pricing from './CourseSection.jsx/Pricing';
 import CourseMessage from './CourseSection.jsx/CourseMessage';
+import SetUp from './CourseSection.jsx/SetUp';
+import CourseStructure from './CourseSection.jsx/CourseStructure';
 
 export const Upload = () => {
     const [selectedItem, setSelectedItem] = useState(null);
@@ -93,7 +95,7 @@ export const Upload = () => {
                 sx={{
                     bgcolor: 'background.paper',
                     padding: '450px',
-                    paddingBottom: '450px',
+                    paddingBottom: '500px',
                     border: '0.2px solid',
                     borderColor: 'white',
                     position: 'relative',
@@ -106,9 +108,14 @@ export const Upload = () => {
                     <Pricing />
                 ) : selectedItem === 'Course messages' ? (
                     <CourseMessage />
+                ) : selectedItem === 'Setup & test video' ? (
+                    <SetUp />
+                ) : selectedItem === 'Course structure' ? (
+                    <CourseStructure />
                 ) : (
+                    // Render the default content
                     <>
-                        <h3
+                                                <h3
                             style={{
                                 position: 'absolute',
                                 top: '20px',
