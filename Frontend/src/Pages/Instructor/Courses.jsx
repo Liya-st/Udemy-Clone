@@ -18,7 +18,7 @@ export const Courses = () => {
             Courses
           </h1>
 
-          <div className='flex gap-[3rem]'>
+          <div className='flex gap-[1rem]'>
             <div>
               <input
                 type='text'
@@ -28,18 +28,18 @@ export const Courses = () => {
               <SearchIcon sx={{ fontSize: 40 }} />
             </div>
 
-            <div className='border ml-[1rem] border-gray-700 w-20 h-10 font-bold'>
+            <div className='border ml-[1rem] border-gray-700 pt-2  w-20 h-10 font-bold'>
               Newest
             </div>
 
             <Link to='Create/Course1'>
-              <div className='bg-purple-600 hover:bg-purple-800 ml-[43rem] w-[8rem] h-[2.5rem] text-white'>
+              <div className='bg-purple-600 hover:bg-purple-800 ml-[5rem] pt-2 w-[8rem] h-[2.5rem] text-white'>
                 New course
               </div>
             </Link>
           </div>
 
-          <p className='p-[4rem] text-grey-700'>
+          <p className='text-bold p-[4rem] text-grey-700 '>
             Based on your experience, we think these resources will be helpful.
           </p>
 
