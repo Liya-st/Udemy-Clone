@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Stripe</title>
-    <meta charset = "UTF-8">
+    <meta charset="UTF-8">
 </head>
+
 <body>
     <h1>Payment</h1>
-    <form method = "postaction=" action = "checkout.php">
+    <form method="postaction=" action="checkout.php">
         <p> Course </p>
 
         <p><strong>US$20.00</strong></p>

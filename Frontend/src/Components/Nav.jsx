@@ -9,7 +9,6 @@ import list from '../list.json';
 export default function Nav() {
   const navigate = useNavigate();
   const [showTeaching, setShowTeaching] = useState(false);
-  const [showBusiness, setShowBusiness] = useState(false);
 
   const handleLogin = () => {
     navigate('/Pages/Login');
@@ -63,23 +62,8 @@ export default function Nav() {
            
             <Group justify='center'>
             <HoverCard width={280} shadow="md">
-        <HoverCard.Target>
-        <p
-              className='font-sans text-base text-[#2D2F31] hover:text-[#A435F0]'
-              onMouseEnter={handleTeaching}
-              onMouseLeave={handleTeaching}
-            >
-              Udemy Business
-            </p>
-        </HoverCard.Target>
-        <HoverCard.Dropdown>
-            <p className='text-[#2D2F31] font-size-[12px] pb-2 font-bold  break-words w-10'>
-            Get your team access to over<br/>25,000 top Udemy courses, <br/>anytime, anywhere.
-            </p>
-            <button className='bg-[#2D2F31] text-white font-bold py-2 px-4 rounded' >
-              Try Udemy Business
-            </button>
-        </HoverCard.Dropdown>
+        
+       
       </HoverCard>
       </Group>
             <Group justify='center'>

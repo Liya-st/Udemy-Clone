@@ -19,6 +19,6 @@ $checkout_session = \Stripe\Checkout\Session::create([
         ]
     ]
 ]);
-                http_response_code(303);
-                header("Location: " . $checkout_session->url)
-?>
+http_response_code(303);
+header("Location: " . $checkout_session->url)
+    ?>
