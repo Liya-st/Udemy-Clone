@@ -24,11 +24,15 @@ const ParentComponent = () => {
   }, []);
 
   return (
-    <div className="courses">
-      {courses.map((course) => (
-        <CourseDetails key={course._id} course={course} />
-      ))}
+      <div className="w-full max-w-[1200px] mx-auto mt-[50px]">
+      <h1 className="text-2xl font-bold mb-6">Top Courses</h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+        {courses.map((course) => (
+          <CourseDetails key={course._id} course={course} />
+        ))}
+      </div>
     </div>
+
   );
 };
 

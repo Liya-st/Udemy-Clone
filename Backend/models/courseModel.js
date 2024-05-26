@@ -17,7 +17,12 @@ const courseSchema = new Schema({
     category:{
         type:String,
         required:true
+    },
+    image:{
+        type:String,
+        required:true
     }
+
 },{ timestamps:true })
 
 //a model to apply the schema
