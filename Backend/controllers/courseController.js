@@ -27,11 +27,11 @@ const getCourse =async(req,res)=>{
 
 //create a new workout
 const createCourse = async(req,res) =>{
-     const {name,instructor,duration,category} =req.body
+     const {name,instructor,duration,category,image} =req.body
     
     //add doc to db
     try{
-     const course= await Course.create({name,instructor,duration,category})
+     const course= await Course.create({name,instructor,duration,category,image})
      res.status(200).json(course)
     }catch(error){
       res.status(400).json({error: error.message})
