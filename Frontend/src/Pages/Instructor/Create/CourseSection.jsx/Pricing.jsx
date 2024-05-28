@@ -43,7 +43,7 @@ export default function Pricing() {
             >
                 Please select the currency and the price tier for your course. If you’d like to offer your course for free, it must have a total video length of less than 2 hours. Also, courses with practice tests cannot be free.
             </p>
-            <div style={{ margin:'20px',position: 'absolute', top: '200px', left: '20px' }}>
+            <div style={{ margin: '20px', position: 'absolute', top: '200px', left: '20px' }}>
                 <label style={{
 
                     padding: '10px',
@@ -54,29 +54,55 @@ export default function Pricing() {
 
 
                 }} htmlFor="currency">USD</label>
-                <br/>
+                <br />
                 <select id="currency" style={{ border: '0.4px solid black', padding: '10px', marginLeft: '10px' }}>
                     {/* Add options for currencies */}
-                    <option value="USD">USD</option>
-                    <option value="EUR">EUR</option>
-                    <option value="GBP">GBP</option>
-                  
+                    <option value="aud">AUD</option>
+                    <option value="brl">BRL</option>
+                    <option value="cad">CAD</option>
+                    <option value="clp">CLP</option>
+                    <option value="cop">COP</option>
+                    <option value="egp">EGP</option>
+                    <option value="eur">EUR</option>
+                    <option value="gbp">GBP</option>
+                    <option value="idr">IDR</option>
+                    <option value="ils">ILS</option>
+                    <option value="inr">INR</option>
+                    <option value="jpy">JPY</option>
+                    <option value="krw">KRW</option>
+                    <option value="mxn">MXN</option>
+                    <option value="myr">MYR</option>
+                    <option value="ngn">NGN</option>
+                    <option value="nok">NOK</option>
+                    <option value="pen">PEN</option>
+                    <option value="php">PHP</option>
+                    <option value="pln">PLN</option>
+                    <option value="ron">RON</option>
+                    <option value="rub">RUB</option>
+                    <option value="sgd">SGD</option>
+                    <option value="thb">THB</option>
+                    <option value="try">TRY</option>
+                    <option value="twd">TWD</option>
+                    <option value="usd">USD</option>
+                    <option value="vnd">VND</option>
+                    <option value="zar">ZAR</option>
+
                 </select>
             </div>
-            <div style={{ margin: '20px',marginLeft:'5px',position: 'absolute', top: '200px', left: '200px' }}>
+            <div style={{ margin: '20px', marginLeft: '5px', position: 'absolute', top: '200px', left: '200px' }}>
                 <label style={{
 
                     padding: '10px',
-                    margin:'20px',
-                    fontSize:'1rem',
-                 fontFamily: 'Times, serif',
+                    margin: '20px',
+                    fontSize: '1rem',
+                    fontFamily: 'Times, serif',
                     fontWeight: 'bold',
-               
+
 
                 }} htmlFor="pricingTier">Pricing Tier</label>
-                <br/>
-                
-                <select id="pricingTier" style={{border:'0.4px solid black',padding:'10px', marginLeft: '10px' }}>
+                <br />
+
+                <select id="pricingTier" style={{ border: '0.4px solid black', padding: '10px', marginLeft: '10px' }}>
                     {/* Add options for pricing tiers */}
                     <option value="">Select</option>
                     <option value="0">Free</option>
